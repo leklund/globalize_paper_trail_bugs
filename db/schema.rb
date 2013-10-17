@@ -29,6 +29,9 @@ ActiveRecord::Schema.define(:version => 20131017164116) do
     t.text     "title"
     t.text     "content"
     t.integer  "access_count"
+    t.text     "author"
+    t.text     "editor"
+    t.datetime "published_at"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
@@ -37,8 +40,11 @@ ActiveRecord::Schema.define(:version => 20131017164116) do
     t.text     "title"
     t.text     "content"
     t.integer  "pages"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.text     "author"
+    t.text     "editor"
+    t.datetime "published_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "post_translations", :force => true do |t|
@@ -57,6 +63,8 @@ ActiveRecord::Schema.define(:version => 20131017164116) do
     t.text     "title"
     t.text     "content"
     t.integer  "access_count"
+    t.text     "author"
+    t.text     "editor"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end

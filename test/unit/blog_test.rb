@@ -15,6 +15,13 @@ class BlogTest < ActiveSupport::TestCase
     assert_equal 1, blog.access_count
   end
 
+  test 'author change should save' do
+    create_blog
+    blog = Blog.last
+    blog.author = 'Trillian'
+    blog.save
+    assert_equal 'Trillian', blog.author
+  end
   test 'access_count increment should NOT create version' do
     create_blog
     blog = Blog.last

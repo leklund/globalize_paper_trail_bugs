@@ -4,6 +4,8 @@ class CreatePosts < ActiveRecord::Migration
       t.text :title
       t.text :content
       t.integer :access_count
+      t.text :author
+      t.text :editor
       t.timestamps
     end
   end

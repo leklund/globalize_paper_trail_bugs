@@ -23,7 +23,7 @@ end
 gem 'jquery-rails'
 
 gem 'paper_trail'
-gem 'globalize3'
+gem 'globalize3', :git => 'git://github.com/globalize/globalize.git', :branch => '3-0-stable'
 
 group :test do
   gem 'turn', :require => false

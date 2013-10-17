@@ -12,12 +12,12 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
   #
   def create_blog
-    Blog.create(:title => 'blog', :content => 'log')
+    Blog.create(:title => 'blog', :content => 'log', :author => 'zaphod', :editor => 'ford')
   end
   def create_post
-    Post.create(:title => 'aaa', :content => 'zzz')
+    Post.create(:title => 'aaa', :content => 'zzz', :author => 'zaphod', :editor => 'ford')
   end
    def create_book
-    Book.create(:title => 'book', :content => 'words')
+    Book.create(:title => 'book', :content => 'words', :author => 'zaphod', :editor => 'ford')
   end
 end
